@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0px 50px;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    color: #18D265;
+    font-size: 50px;
+}
+
+.hire-me {
+    padding: 10px 50px;
+    background-color: #18D265;
+    color: #000;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+}
