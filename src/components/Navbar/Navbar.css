@@ -2,7 +2,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
+    margin: 30px 0px;
     padding: 0px 50px;
 }
 
@@ -11,6 +11,15 @@ nav ul {
     gap: 50px;
     justify-content: center;
     align-items: center;
+}
+
+nav ul li {
+    color: #fff;
+}
+
+a:hover {
+    border-bottom: 2px solid #18D265;
+    transition: 0.3s;
 }
 
 .logo {
@@ -22,7 +31,7 @@ nav ul {
     padding: 10px 50px;
     background-color: #18D265;
     color: #000;
-    font-weight: 700;
+    font-weight: 900;
     border: none;
     border-radius: 10px;
 }

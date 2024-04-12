@@ -1,0 +1,21 @@
+.hero {
+    background-image: url(../../assets/background.jpeg);
+}
+
+.content {
+    background-color: rgba(36, 40, 44, 0.95);
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.hero h1 {
+    color: #18D265;
+    font-size: 60px;
+}
