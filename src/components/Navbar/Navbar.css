@@ -17,7 +17,7 @@ nav ul li {
     color: #fff;
 }
 
-a:hover {
+nav a:hover {
     border-bottom: 2px solid #18D265;
     transition: 0.3s;
 }

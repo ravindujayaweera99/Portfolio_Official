@@ -13,3 +13,7 @@ footer {
     display: flex;
     gap: 25px;
 }
+
+.social-links a:hover {
+    color: #18D265;
+}

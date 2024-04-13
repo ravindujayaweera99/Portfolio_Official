@@ -15,16 +15,12 @@ body {
   color: #F2F5ED;
   min-height: 100vh;
   scroll-behavior: smooth;
-  overflow-y: hidden;
+
 }
 
 a {
   text-decoration: none;
   color: #fff;
-}
-
-a:hover {
-  color: #18D265;
 }
 
 li {

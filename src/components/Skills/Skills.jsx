@@ -11,11 +11,15 @@ import sql from "../../assets/mysql.png";
 import mongodb from "../../assets/mongodb.png";
 import postgre from "../../assets/postgresql.png";
 import figma from "../../assets/figma.png";
-import Footer from "../Footer/Footer";
+import { motion, easeOut } from "framer-motion";
 
 const Skills = () => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.9, ease: easeOut }}
+    >
       <Navbar />
       <div className="skills">
         <h1 className="title">My Skills</h1>
@@ -45,7 +49,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 };
 

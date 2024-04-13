@@ -2,8 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Skills from "./components/Skills/Skills";
-import Projects from "./components/Projects/Projects";
-
+import Projects from "./components/Projects/Projects"
 
 function App() {
   return (
