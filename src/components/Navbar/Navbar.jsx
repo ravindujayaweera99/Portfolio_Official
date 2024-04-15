@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <>
     <div className="banner">
-      <h4>This Website is currently on Renovations!</h4>
+      <h4>This Website is Currently Under Renovations!</h4>
       <h3>New Look is on the Way!</h3>
     </div>
       <nav>
