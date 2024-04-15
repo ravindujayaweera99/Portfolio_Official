@@ -3,6 +3,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0px 50px;
+    gap: 50px;
 }
 
 .detail-name {
@@ -16,4 +17,26 @@ footer {
 
 .social-links a:hover {
     color: #18D265;
+}
+
+/* For tablets (landscape and portrait) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    footer h3 {
+        font-size: 15px;
+    }
 }

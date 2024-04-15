@@ -4,6 +4,7 @@ import { motion, easeOut } from "framer-motion";
 import sanlak from "../../assets/project-images/sanlak.png";
 import portfolio from "../../assets/project-images/portfolio.png";
 import coffee from "../../assets/project-images/coffee.png";
+import Footer from "../Footer/Footer";
 
 const projects = [
   {
@@ -42,31 +43,34 @@ const projects = [
 
 const Projects = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.75, ease: easeOut }}
-      className="wrapper-projects"
-    >
-      <Navbar />
-      <h1 className="projects-heading">My Projects</h1>
-      <div className="projects">
-        {projects.map((p) => (
-          <a href={p.link} target="_blank">
-            <div className="project">
-              <div className="left">
-                <img src={p.img} alt="project-image" />
+    <>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.75, ease: easeOut }}
+        className="wrapper-projects"
+      >
+        <Navbar />
+        <h1 className="projects-heading">My Projects</h1>
+        <div className="projects">
+          {projects.map((p) => (
+            <a key={p.id} href={p.link} target="_blank">
+              <div className="project">
+                <div className="left">
+                  <img src={p.img} alt="project-image" />
+                </div>
+                <div className="right">
+                  <h1>{p.name}</h1>
+                  <p>{p.desc}</p>
+                  <h2 className="techused">{p.tech}</h2>
+                </div>
               </div>
-              <div className="right">
-                <h1>{p.name}</h1>
-                <p>{p.desc}</p>
-                <h2 className="techused">{p.tech}</h2>
-              </div>
-            </div>
-          </a>
-        ))}
-      </div>
-    </motion.div>
+            </a>
+          ))}
+        </div>
+      </motion.div>
+      <Footer />
+    </>
   );
 };
 

@@ -12,9 +12,11 @@ import mongodb from "../../assets/mongodb.png";
 import postgre from "../../assets/postgresql.png";
 import figma from "../../assets/figma.png";
 import { motion, easeOut } from "framer-motion";
+import Footer from "../Footer/Footer";
 
 const Skills = () => {
   return (
+    <>
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -38,7 +40,7 @@ const Skills = () => {
             <img src={java} alt="react-logo" />
           </div>
           <div className="database">
-            <h1>Databse</h1>
+            <h1>Database</h1>
             <img src={sql} alt="react-logo" />
             <img src={mongodb} alt="react-logo" />
             <img src={postgre} alt="react-logo" />
@@ -50,6 +52,8 @@ const Skills = () => {
         </div>
       </div>
     </motion.div>
+    <Footer />
+    </>
   );
 };
 

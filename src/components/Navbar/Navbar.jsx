@@ -16,10 +16,10 @@ const Navbar = () => {
           <Link to={"/projects"}>My Projects</Link>
         </li>
         <li>
-          <Link>About Me</Link>
+          <Link to={"/aboutus"}>About Me</Link>
         </li>
         <li>
-          <button className="hire-me">Hire Me</button>
+          <Link to={"/contact"}><button className="hire-me">Hire Me</button></Link>
         </li>
       </ul>
       <Outlet />

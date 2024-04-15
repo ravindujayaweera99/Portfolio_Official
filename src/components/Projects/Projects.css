@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    margin-bottom: 50px;
 }
 
 .projects-heading {
@@ -52,4 +53,45 @@
 .project .right p {
     text-align: justify;
     margin-right: 50px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .project {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project h1 {
+        text-align: center;
+    }
+
+    .project .right p {
+        text-align: center;
+    }
+
+    .techused {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .project {
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project .left img {
+        display: none;
+    }
 }

@@ -13,6 +13,7 @@
 .skillColumns {
     display: flex;
     gap: 200px;
+    margin-bottom: 50px;
 }
 
 .skillColumns img {
@@ -41,4 +42,55 @@
     flex-direction: column;
     align-items: center;
     gap: 25px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .skillColumns {
+        width: 80vw;
+    }
+
+    .frontend,
+    .backend,
+    .database,
+    .uiux:not(h1) {
+        width: 40px;
+        justify-content: end;
+    }
+
+    .skillColumns h1 {
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .skillColumns {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skillColumns img {
+        width: 85px;
+    }
+
+    .frontend h1,
+    .backend h1,
+    .database h1,
+    .uiux h1 {
+        font-size: 13px;
+    }
+
+    .frontend,
+    .backend,
+    .database,
+    .uiux {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
 }
